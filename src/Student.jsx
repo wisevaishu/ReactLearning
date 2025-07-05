@@ -22,3 +22,11 @@ isStudent: PropTypes.bool,
 //     isStudent: false,
 // }
 export default Student
+
+//app
+
+ {/* <Student name="Welcome" age={39} isStudent={false}/> 
+      <Student name="Patrick" age={42} isStudent={true}/>
+      <Student name="Mohnish" age={10} isStudent={true}/>
+      <Student name="Sriman" age={14} isStudent={true}/>
+      <Student name="Prabhu"/>  */}

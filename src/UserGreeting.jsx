@@ -19,3 +19,10 @@ UserGreeting.proptypes={
     username: PropTypes.string,
 }
 export default UserGreeting
+
+//app
+
+{/* <UserGreeting isLoggedIn={true} username="Wise"/>
+    <UserGreeting isLoggedIn={false} username="Mohnish"/>
+    <UserGreeting isLoggedIn={false} /> */}
+    {/* <UserGreeting /> */}

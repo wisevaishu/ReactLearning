@@ -1,32 +1,26 @@
-// import Header from './Header.jsx'
-// import Footer from './Footer.jsx';
-// import Food from './Food.jsx';
-// import Card from './Card.jsx';
-//import Button from './Button.jsx';
-//import Student from './Student.jsx';
-//import UserGreeting from "./UserGreeting";
+
 import List from './List.jsx';
 
 function App() {
 
+  const fruits=[{id:1, name:"apple", calories:1},
+              {id:2, name:"orange", calories:3},
+              {id:3, name:"banana", calories:2},
+              {id:4, name:"pineapple", calories:4},
+              {id:5, name:"goa", calories:5} 
+             ];
+
+   const vegetables=[{id:6, name:"carrot", calories:1},
+              {id:7, name:"okra", calories:3},
+              {id:8, name:"cucumber", calories:2},
+              {id:9, name:"cabbage", calories:4},
+              {id:10, name:"beans", calories:5} 
+             ];             
+
   return(
     <>
-    <List />
-    {/* <UserGreeting isLoggedIn={true} username="Wise"/>
-    <UserGreeting isLoggedIn={false} username="Mohnish"/>
-    <UserGreeting isLoggedIn={false} /> */}
-    {/* <UserGreeting /> */}
-      {/* <Student name="Welcome" age={39} isStudent={false}/> 
-      <Student name="Patrick" age={42} isStudent={true}/>
-      <Student name="Mohnish" age={10} isStudent={true}/>
-      <Student name="Sriman" age={14} isStudent={true}/>
-      <Student name="Prabhu"/>  */}
-      {/*<Button/>
-      <Header/>
-      <Food/>
-      <Footer/>
-      <Card/>
-      <Card/> */}
+    {fruits.length>0 && <List items={fruits} category="Fruits"/>}
+    {vegetables.length>0 && <List items={vegetables} category="Vegetables"/>}
     </>
   );
  
